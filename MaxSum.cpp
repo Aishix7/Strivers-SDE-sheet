@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// kadane's algorithm.
 vector<int> maxSum(vector<int>& arr){
     int maxi = INT_MIN;
     int sum = 0;
