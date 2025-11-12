@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int maxProd(vector<int>& arr){
-    int prefix = 1,suffix = 1,ans = 1;
+    int prefix = 1,suffix = 1,ans = INT_MIN;
     int n = arr.size();
     for(int i=0;i<n;i++){
         if(prefix == 0) prefix = 1;
