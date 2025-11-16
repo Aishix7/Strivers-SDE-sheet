@@ -3,10 +3,13 @@ using namespace std;
 pair<int,int> freq(vector<int>&arr){
     int n = arr.size();
     vector<int>hashmap(n+1);
+
     for(int i=0;i<(n+1);i++){
        hashmap[arr[i]]++;
     }
+
     int repeating = 0,missing = 0;
+
     for(int i=0;i<(n+1);i++){
         if(hashmap[i] > 1){
             repeating = i;
@@ -15,6 +18,7 @@ pair<int,int> freq(vector<int>&arr){
             missing = i;
         }
     }
+    
     return {repeating,missing};
     
 }
