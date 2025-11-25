@@ -19,11 +19,11 @@ int main()
         }
         
     }
-    
+    int count1 = 0;
     for(int i=0;i<arr.size();i++){
-        if(arr[i] == major) count++;
+        if(arr[i] == major) count1++;
     }
-    if(count > (arr.size()/2)){
+    if(count1 > (arr.size()/2)){
         cout << major;
     }
 
