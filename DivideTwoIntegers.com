@@ -6,8 +6,8 @@ int ans(int &dividend, int &divisor){
     if(dividend <= 0 && divisor > 0)sign = false;
     
     long quotient = 0;
-    long n = abs(dividend);
-    long d = abs(divisor);
+    long n = abs((long)dividend);
+    long d = abs((long)divisor);
     
     while(n >= d){
         int count = 0;
