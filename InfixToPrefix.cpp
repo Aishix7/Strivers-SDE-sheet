@@ -47,12 +47,22 @@ class convert{
                     st.pop();
                 }
                 else {
-                    while(!st.empty() && priority(s[i]) < priority(st.top())){
-                        ans += st.top();
-                        st.pop();        
+                    if(s[i] == '^'){
+                        while(!st.empty() && priority(s[i]) <= priority(st.top())){
+                            ans += st.top();
+                            st.pop();        
+                        }
+                    else{
+                        while(!st.empty() && priority(s[i]) < priority(st.top())){
+                            ans += st.top();
+                            st.pop();        
+                        }
+                    
                     }
                     st.push(s[i]);
                 }
+                
+            }
                 i++;
             }
             
