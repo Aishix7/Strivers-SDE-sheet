@@ -37,7 +37,6 @@ int main() {
             mini = min(mini, R - best);
         }
     }
-
     if (mini == INT_MAX) cout << 0 << "\n";
     else cout << mini << "\n";
 
