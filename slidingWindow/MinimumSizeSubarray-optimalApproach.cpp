@@ -21,4 +21,3 @@ int main()
     cout << mini << "\n";
     return 0;
 }
-// ik 
